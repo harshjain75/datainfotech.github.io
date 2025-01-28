@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Infotech</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            /* background: url('Data Infotech\bg.webp'); */
+            color: #fff;
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        header .cta {
+            margin-top: 2rem;
+        }
+        header .cta a {
+            text-decoration: none;
+            color: white;
+            background: #e50914;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+        header .cta a:hover {
+            background: #b20710;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            color: #e50914;
+        }
+        .products {
+            padding: 3rem 2rem;
+            text-align: center;
+            background-color: #121212;
+        }
+        .products h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        .products-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .product {
+            border: 1px solid #333;
+            border-radius: 8px;
+            background-color: #222;
+            width: 250px;
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: #e50914;
+        }
+        .product p {
+            color: #aaa;
+            margin: 0.5rem 0;
+        }
+        .product button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .product button:hover {
+            background-color: #b20710;
+        }
+        .contact {
+            padding: 3rem 2rem;
+            text-align: center;
+            background-color: #000;
+        }
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .contact p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to HP Data Infotech</h1>
+        <p>Authorised distributor of HP Laptops & Desktops</p>
+        <div class="cta">
+            <a href="#products">Shop Now</a>
+        </div>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section class="products" id="products">
+        <h2>Our HP Products</h2>
+        <div class="products-container">
+            <div class="product">
+                <h3>HP 255 G10 Laptop</h3>
+                <p>Rs. 32,999</p>
+                <button onclick="window.location.href='https://www.hp.com/in-en/shop/hp-255-15-6-g10-notebook-pc-b1fw9pt.html'">Specifications</button>
+            </div>
+            <div class="product">
+                <h3>HP 255 G9 Notebook PC</h3>
+                <p>Rs. 29,990</p>
+                <button onclick="window.location.href='https://support.hp.com/in-en/document/ish_5845268-5845367-16'">Specifications</button>
+            </div>
+            <div class="product">
+                <h3>HP Laptop 250R G9</h3>
+                <p>Rs. 31,325</p>
+                <button onclick="window.location.href='https://www.amazon.in/dp/B0DKGB5V4T'">Specifications</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 1st Floor, Ram Prasad Complex, Chatribari Road</p>
+        <p>Guwahati, Assam, India</p>
+        <p>Phone: +91 9435104143</p>
+        <p>Email: harshjain@datainfotech.in</p>
+    </section>
+    <footer>
+        <p>© 2025 HP Data Infotech | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
